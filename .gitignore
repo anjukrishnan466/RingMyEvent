@@ -1,17 +1,27 @@
+# Ignore environment files
+.env
+.env.*
+
+# Ignore development config files
 */config/development
+
+# Ignore log files but keep index.html
 */logs/log-*.php
 !*/logs/index.html
+
+# Ignore cache files but keep necessary ones
 */cache/*
 !system/cache/*
 !*/cache/index.html
 !*/cache/.htaccess
 
+# Ignore user guide and build files
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 
-#codeigniter 3
+# CodeIgniter 3 logs and vendor
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
